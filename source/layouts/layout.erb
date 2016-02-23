@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "A Cottage in Padstow" %></title>
+    <link rel="icon" href="images/sail_boat.ico">
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+
+    <%= stylesheet_link_tag :site %>
+    <%= javascript_include_tag :all %>
+  </head>
+
+  <div class="container">
+  <body>
+    <header class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- <%= link_to "A Cottage in Padstow", '/', id: "logo" %> -->
+        <a class="navbar-brand" href="/">A Cottage In Padstow</a>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home",   '/' %></li>
+            <li><%= link_to "About",   'about.html' %></li>
+            <li><%= link_to "Contact", 'contact.html' %></li>
+            <li><%= link_to "Location", 'location.html' %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- <div class="container"> -->
+      <%= yield %>
+    <!-- </div> -->
+  </div>
+  </body>
+</html>
