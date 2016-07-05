@@ -49,6 +49,7 @@ GEM
     fast_blank (1.0.0)
     fastimage (1.8.1)
       addressable (~> 2.3, >= 2.3.5)
+    ffi (1.9.10)
     ffi (1.9.10-x86-mingw32)
     haml (4.0.7)
       tilt
@@ -106,6 +107,8 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.8.4)
     multi_json (1.11.2)
+    nokogiri (1.6.7.2)
+      mini_portile2 (~> 2.0.0.rc2)
     nokogiri (1.6.7.2-x86-mingw32)
       mini_portile2 (~> 2.0.0.rc2)
     padrino-helpers (0.13.1)
@@ -139,6 +142,7 @@ GEM
       nokogiri (~> 1.3)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
@@ -148,3 +152,6 @@ DEPENDENCIES
   middleman-livereload
   tzinfo-data
   wdm (~> 0.1.0)
+
+BUNDLED WITH
+   1.12.5
